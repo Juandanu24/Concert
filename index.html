@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./build/css/app.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="contenedor contenido-header">
+        <h1>Rock & EDM Festival</h1>
+        <nav class="navegacion-principal">
+          <a href="#lineup">Line Up</a>
+          <a href="#galeria">Galería</a>
+          <a href="#boletas">Boletas</a>
+        </nav>
+      </div>
+      <!--contenedor contenido-header-->
+    </header>
+    <div class="video">
+      <div class="overlay">
+        <div class="contenedor contenido-video">
+          <h2>Rock & EDM Festival</h2>
+          <p>Junio 2022. Montería, Colombia.</p>
+        </div>
+        <!--contenedor contenido-video-->
+      </div>
+      <!--overlay-->
+      <video autoplay muted loop>
+        <source src="./video/concierto.mp4" type="video/mp4" />
+        <source src="./video/concierto.ogg" type="video/ogg" />
+        <source src="./video/concierto.webm" type="video/webm" />
+      </video>
+    </div>
+    <!--video-->
+
+    <section class="contenedor sobre-festival">
+      <div class="imagen">
+        <picture>
+          <source srcset="build/img/imagen_vocalista.avif" type="image/avif" />
+          <source srcset="build/img/imagen_vocalista.webp" type="image/webp" />
+          <img
+            loading="lazy"
+            width="200"
+            height="300"
+            src="build/img/imagen_vocalista.jpg"
+            alt="Imagen vocalista"
+          />
+        </picture>
+      </div>
+      <!--imagen-->
+      <div class="contenido-festival">
+        <h2>Rock & EDM Festival</h2>
+        <p class="fecha">Junio 2022. Montería, Colombia.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo,
+          nam a iusto accusantium corrupti placeat, natus fugiat delectus
+          obcaecati sed, consequatur aliquam labore assumenda non itaque nulla
+          dolor soluta impedit.
+        </p>
+      </div>
+      <!--contenido-festival-->
+    </section>
+
+    <section id="lineup" class="lineup">
+      <h3>Line Up</h3>
+      <p class="dia">Viernes 21</p>
+
+      <div class="contenedor escenarios-contenedor">
+        <div class="escenario rock bg-amarillo">
+          <p class="nombre-escenario">Escenario de Rock</p>
+          <ul class="calendario">
+            <li>24:00 | <span>Nunexxito</span></li>
+            <li>22:00 | <span>Diome</span></li>
+            <li>20:00 | <span>Andrés Cepeda</span></li>
+            <li>19:00 | <span>Martina La Peligrosa</span></li>
+            <li>18:00 | <span>ChampiRock</span></li>
+            <li>17:00 | <span>Hector el Father</span></li>
+          </ul>
+        </div>
+        <!--escenario-->
+
+        <div class="escenario edm bg-verde">
+          <p class="nombre-escenario">Escenario EDM</p>
+          <ul class="calendario">
+            <li>24:00 | <span>BigDaddy</span></li>
+            <li>22:00 | <span>Amelia</span></li>
+            <li>20:00 | <span>777</span></li>
+            <li>19:00 | <span>Ryan Castro</span></li>
+
+            <li>18:00 | <span>Imagine Dragons</span></li>
+            <li>17:00 | <span>Rafael Santos</span></li>
+          </ul>
+        </div>
+        <!--escenario-->
+      </div>
+      <!--contenedor escenarios-contenedor"-->
+
+      <!---------------------------------------------------------------------------->
+      <p class="dia">Sábado 22</p>
+      <div class="contenedor escenarios-contenedor">
+        <div class="escenario edm bg-verde">
+          <p class="nombre-escenario">Escenario de EDM</p>
+          <ul class="calendario">
+            <li>24:00 | <span>Niche</span></li>
+            <li>22:00 | <span>Maluma</span></li>
+            <li>20:00 | <span>>Rene</span></li>
+            <li>19:00 | <span>Morat</span></li>
+            <li>18:00 | <span>Bad Bunny</span></li>
+            <li>17:00 | <span>Peso Pluma</span></li>
+          </ul>
+        </div>
+        <!--escenario-->
+
+        <div class="escenario rock bg-amarillo">
+          <p class="nombre-escenario">Escenario Rock</p>
+          <ul class="calendario">
+            <li>24:00 | <span>Fercho</span></li>
+            <li>22:00 | <span>Karol G</span></li>
+            <li>20:00 | <span>Nicky Jam</span></li>
+            <li>19:00 | <span>Daddy Yankee</span></li>
+
+            <li>18:00 | <span>Bob</span></li>
+            <li>17:00 | <span>Tom Walker</span></li>
+          </ul>
+        </div>
+        <!--escenario-->
+      </div>
+      <!--contenedor escenarios-contenedor"-->
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+      <h3>Galería</h3>
+      <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletas" class="boletas bg-verde">
+      <h3>Boletas</h3>
+      <div class="contenedor contenedor-boletas">
+        <div class="basico pase">
+          <p class="nombre-pase">Pase 1 Día</p>
+          <header class="pase-header">
+            <p>Incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos escenarios</li>
+              <li>Cómida y bebida</li>
+            </ul>
+          </div>
+          <!--pase body-->
+          <footer class="pase-footer">
+            <p>$100</p>
+          </footer>
+        </div>
+        <!--basico pase-->
+
+        <div class="premium pase">
+          <p class="nombre-pase">Pase 2 Días</p>
+          <header class="pase-header">
+            <p>Incluye</p>
+          </header>
+          <div class="pase-body">
+            <ul>
+              <li>Acceso a ambos escenarios</li>
+              <li>Cómida y bebida</li>
+              <li>Camisa del evento</li>
+              <li>Accesp VIP</li>
+            </ul>
+          </div>
+          <!--pase body-->
+          <footer class="pase-footer">
+            <p>$180</p>
+          </footer>
+        </div>
+        <!--premium pase-->
+      </div>
+      <!--contenedor contenedor boletos-->
+    </section>
+    <footer class="site-footer">
+      <p>Rock & EDM Festival. Todos los derechos reservados</p>
+    </footer>
+
+    <script src="/build/js/app.js"></script>
+  </body>
+</html>
